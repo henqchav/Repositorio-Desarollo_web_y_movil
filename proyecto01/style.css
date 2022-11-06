@@ -1,0 +1,256 @@
+
+:root {
+    --color-1: #18121E;
+    --color-2: #233237;
+    --color-3: #984B43;
+    --color-4: #EAC67A;
+  }
+img.profile-photo {
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+}
+body{
+    background-color: var(--color-2);
+}
+div#content{
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+    height: 70%;
+}
+div#profile-data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+div#profile-data h1 {
+    height: 125px;
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-1);
+    font-weight: bolder;
+    
+}
+div#data fieldset legend {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-3);
+  font-family: 'Inconsolata', monospace;
+  width: 225px;
+  border-radius: 28px;
+  box-shadow:  5px 5px 15px var(--color-2);
+  
+}
+
+div#data fieldset {
+    background-color: var(--color-4);
+    margin-top: 30px;
+    border-color: var(--color-3);
+}
+
+div#data fieldset legend span {
+    color: var(--color-1);
+    font-size: 350%;
+    margin-right: 10%;
+    margin-left: 5%;
+    border-radius: 28px;
+}
+    
+input#check1{
+    display: none;
+}
+
+input#check1 ~ div#map1{
+    display: none;
+    margin: 2%;
+    
+}
+
+input#check1:checked ~ div#map1{
+    display: block;
+}
+
+input#check2{
+    display: none;
+}
+
+input#check2 ~ div#map2{
+    display: none;
+    margin: 2%;
+    
+}
+
+input#check2:checked ~ div#map2{
+    display: block;
+}
+
+input#check3{
+    display: none;
+}
+
+input#check3 ~ div#map3{
+    display: none;
+    margin: 2%;
+    
+}
+
+input#check3:checked ~ div#map3{
+    display: block;
+}
+
+input#check4{
+    display: none;
+}
+
+input#check4 ~ div#map4{
+    display: none;
+    margin: 2%;
+    
+}
+
+input#check4:checked ~ div#map4{
+    display: block;
+}
+label{
+    text-decoration: underline;
+    color: var(--color-3);
+    cursor: pointer;
+}
+
+
+p{
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-1);
+}
+h4{
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-1);
+}
+li{
+    font-family: 'Inconsolata', monospace;
+    color: var(--color-1);
+}
+
+
+div#gh:hover{
+    background-color: var(--color-2);
+}
+div#gh{
+    transition: background-color .5s;
+
+}
+
+div#ig:hover{
+    background-color: var(--color-2);
+}
+div#ig{
+    transition: background-color .5s;
+    
+}
+
+div#tw:hover{
+    background-color: var(--color-2);
+}
+div#tw{
+    transition: background-color .5s;
+}
+
+table {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color:var(--color-4);
+    background-color: var(--color-3);
+    border-collapse: collapse;
+    box-shadow:  10px 10px 20px var(--color-2);
+    height: 50%;
+    width: 50%;
+}
+th,td{
+    padding: 10px;
+}
+thead{
+    border-bottom: solid 5px black;
+    background-color: var(--color-1);
+}
+tr:nth-child(even){
+    background-color: var(--color-2);
+}
+tr:hover td{
+    background-color: var(--color-1);
+}
+
+li#direct{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+div#map4 label.form {
+    font-family: 'Inconsolata', monospace;
+    color:var(--color-4);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+form {
+    background-color:var(--color-2);
+    width: 50%;
+    height: 60%;
+}
+
+div#map4 input.box {
+    width: 90%;
+    height: 10%;
+    margin-left: 10px;
+    margin: 3%;
+    border-radius: 5px;
+}
+div#map4 textarea.field {
+    width: 90%;
+    height: 10%;
+    margin-left: 10px;
+    margin: 3%;
+    border-radius: 5px;
+}
+
+div#map4 input.btna {
+    width: 50%;
+    height: 10%;
+    margin-left: 20px;
+    margin: 3%;
+}
+
+img.netsimgs{
+  height: 70px;
+  width: 70px;
+  margin: 0% 0% 0% 0%;
+}
+
+
+div#networks{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  
+}
+@media screen and (max-width:700px){
+  div#networks{
+    width: 40%;
+   }
+}
+@media screen and (max-width:350px){
+  div#networks{
+    width: 40%;
+   }
+}
