@@ -21,7 +21,7 @@ let cargarDatos = () =>{
             
             let nombre = pokemons.name
             let fotos = pokemons.sprites.front_default
-            console.log(fotos)
+            /*console.log(pokemons.sprites.front_default)*/
             document.getElementById("exampleSelect1").innerHTML += 
             `
             <option>
@@ -40,4 +40,42 @@ let cargarDatos = () =>{
    
 
 }
+
+let mostrarImagen = () =>{
+    let select = document.getElementById("exampleSelect1")
+    select.addEventListener("change", (event) =>{
+        let valor = event.target.value  
+        let url = 'https://pokeapi.co/api/v2/pokemon/' + valor+"/";
+        fetch(url)
+        .then(res => res.json())
+        .then((pokemons) => {
+            
+            let nombre = pokemons.name
+            let fotos = pokemons.sprites.front_default
+            let frasesfiltradas = pokemons.forms.filter(pokefoto => pokefoto.name == valor);
+
+            document.getElementById("imagen").innerHTML = ''
+
+            for( let pokem of frasesfiltradas) {
+            let urlft = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+ (pokem.url).split("/")[6] + ".png"
+            let a = pokem.url.split("/")
+            let plantilla = `
+                <div class="col-lg-3">
+                    <h3>${pokem.name}</h3>
+                    
+                    <img src = "${urlft}">
+                </div>
+            `
+            document.getElementById("imagen").innerHTML += plantilla
+            }
+        
+            })
+        .catch(function(error) {
+            console.error("¡Error!", error);
+        })
+    });
+    
+
+}
 cargarDatos()
+mostrarImagen()
