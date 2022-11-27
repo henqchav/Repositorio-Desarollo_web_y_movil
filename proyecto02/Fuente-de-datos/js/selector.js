@@ -1,9 +1,10 @@
-/*
+
 window.addEventListener('DOMContentLoaded', (event) => {
     cargarDatos()
+    mostrarImagen()
     
 });
-*/
+
 let cargarDatos = () =>{
 
     const nums = Array(100)
@@ -52,23 +53,18 @@ let mostrarImagen = () =>{
             
             let nombre = pokemons.name
             let fotos = pokemons.sprites.front_default
-            let frasesfiltradas = pokemons.forms.filter(pokefoto => pokefoto.name == valor);
+            let experiencia = pokemons.base_experience
+            console.log(pokemons)
 
             document.getElementById("imagen").innerHTML = ''
-
-            for( let pokem of frasesfiltradas) {
-            let urlft = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+ (pokem.url).split("/")[6] + ".png"
-            let a = pokem.url.split("/")
             let plantilla = `
-                <div class="col-lg-3">
-                    <h3>${pokem.name}</h3>
-                    
-                    <img src = "${urlft}">
-                </div>
-            `
-            document.getElementById("imagen").innerHTML += plantilla
-            }
-        
+                    <div class="col-lg-3">
+                        <h3>${nombre}</h3>
+                        <img src = "${fotos}">
+                        <p>Experiencia base: ${experiencia}</p>
+                    </div>
+                `
+                document.getElementById("imagen").innerHTML += plantilla
             })
         .catch(function(error) {
             console.error("¡Error!", error);
@@ -77,5 +73,3 @@ let mostrarImagen = () =>{
     
 
 }
-cargarDatos()
-mostrarImagen()
