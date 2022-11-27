@@ -50,11 +50,14 @@ let mostrarImagen = () =>{
         fetch(url)
         .then(res => res.json())
         .then((pokemons) => {
-            
+
+            console.log(pokemons)
             let nombre = pokemons.name
             let fotos = pokemons.sprites.front_default
             let experiencia = pokemons.base_experience
-            console.log(pokemons)
+            let abilidad1 = pokemons.abilities[0].ability.name
+            /*let abilidad2 = pokemons.abilities[1].ability.name*/
+            
 
             document.getElementById("imagen").innerHTML = ''
             let plantilla = `
@@ -62,6 +65,8 @@ let mostrarImagen = () =>{
                         <h3>${nombre}</h3>
                         <img src = "${fotos}">
                         <p>Experiencia base: ${experiencia}</p>
+                        <p>Abilidad 1: ${abilidad1}</p>
+                        <p>Abilidad 2: ${abilidad1}</p>
                     </div>
                 `
                 document.getElementById("imagen").innerHTML += plantilla
