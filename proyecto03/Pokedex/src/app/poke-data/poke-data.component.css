@@ -1,0 +1,45 @@
+.card{
+    width: 30%;
+    margin-top: 50px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+mat-card-title-group{
+    height: 45%;
+    background-color: #ad9ca2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+
+}
+mat-card-header{
+    display: flex;
+    align-items: center;
+}
+
+.basic-info{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.stats{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+div.stats-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    width: 70%;
+}

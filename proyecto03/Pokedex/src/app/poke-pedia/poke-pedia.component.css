@@ -1,0 +1,44 @@
+td{
+    margin-top: 10px;
+    padding-top: 20px;
+    background-color: white;
+    border-bottom: 50px solid #272B30;
+    border-top: 50px solid #272B30;
+    cursor: pointer;
+}
+
+th{
+    border-bottom: 10px;
+    
+}
+
+table{
+    
+    border-collapse: collapse;
+    border-spacing: 0px 20px;
+    background-color: #272B30;
+    min-width: 30%;
+      
+}
+
+.table{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 40%;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}

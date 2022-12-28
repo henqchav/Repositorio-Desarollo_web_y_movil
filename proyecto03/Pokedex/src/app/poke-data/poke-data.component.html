@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="card">
+    <mat-card class="example-card">
+        <mat-card-header>
+        
+            <mat-card-title-group>
+                <mat-card-title>{{pokemon.name}}</mat-card-title>
+                <mat-card-subtitle>No. {{pokemon.id}}</mat-card-subtitle>
+            </mat-card-title-group>
+
+            <img mat-card-lg-image src="{{pokeimg}}" >
+        </mat-card-header>
+
+            <div class="stats-cont">  
+                <div class="info">
+                    <div class="basic-info">
+                        <h2>Basic info</h2>
+                        <h4>Type: {{pokeinfo}}</h4>
+                        <h4>Height: {{pokemon.height}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{pokemon.height}}"></mat-progress-bar>
+                        <h4>Weight: {{pokemon.weight}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{pokemon.weight}}"></mat-progress-bar>
+                    </div>
+
+                    <div class="stats">
+                        <h2>Stats</h2>
+                        <h4>HP: {{stat1}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{stat1}}"></mat-progress-bar>
+                        <h4>ATK: {{stat2}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{stat2}}"></mat-progress-bar>
+                        <h4>ATK: {{stat3}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{stat3}}"></mat-progress-bar>
+                        <h4>SP-ATK: {{stat4}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{stat4}}"></mat-progress-bar>
+                        <h4>SP-DEF: {{stat5}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{stat5}}"></mat-progress-bar>
+                        <h4>SPEED: {{stat6}}</h4>
+                        <mat-progress-bar mode="determinate" value="{{stat6}}"></mat-progress-bar>
+                    </div>
+                    <div class="abilities">
+                        <h2>Main Ability</h2>
+                        <h4>Ability: {{ability}}</h4>
+                    </div>
+                </div>  
+            </div>
+    </mat-card>
+
+    </div>
+
+</div>

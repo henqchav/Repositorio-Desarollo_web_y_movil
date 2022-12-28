@@ -1,0 +1,25 @@
+
+.mat-toolbar{
+    background-color: #3A3F44;
+    
+}
+
+img:hover{
+    cursor: pointer;
+}
+h4{
+    color: white;
+}
+h4:hover{
+    cursor: pointer;
+}
+
+.spacer{
+    width: 40px;
+}
+
+.spacer2{
+    width: 20px;
+}
+
+
